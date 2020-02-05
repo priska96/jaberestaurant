@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="GE">
+	<head>
+		<meta charset="uft-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta name="author" content="Priska Kohnen">
+		 <meta name="date" content="2019-08-17T11:32:37+02:00">
+		 <meta name="description" content="Dine and Bar with Japanese essence. Our mission is to deliver the amazingly rich heritage to diners and drinkers in the heat of Mittte on a level not yet experienced in Berlin. This is why the name JABE was created after Japan and Berlin.">
+		<title>JABE|News</title>
+		<link rel="stylesheet" href="styles.css">
+
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '2296008633855279'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=2296008633855279&ev=PageView
+		&noscript=1"/>
+		</noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
+	<body>
+		<header class="copper less_spaced_letters">
+			<div class="quandoo-widget-builder" data-config='{"format":"text-button","bgcolor":"#040000","txcolor":"#c7b39e","merchant":53412,"txt":"RESERVATION"}'></div>
+			<div>GE/ EN</div>
+		</header>
+		<a href="./index.html" class="logo_container">
+			<div class="logo">
+				<img src="jabe-logo.png" alt="JABE-Logo"/>
+			</div>
+		</a>
+		<nav class="nav_menu_container copper">
+			<div class="menu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				<span class="less_spaced_letters">MENU</span>
+			</div>
+			<div class="menu_toggle">
+				<a href="./news.html" class="link copper">NEWS</a>
+				<a href="./special_deals.html" class="link copper special">SPECIAL DEALS</a>
+				<a href="./events.html" class="link copper">EVENTS</a>
+				<a href="./gallery.html" class="link copper">GALLERY</a>
+			</div>
+			<div class="menu_toggle next_row unvisible">
+				<span class="link copper">IMPRESSUM</span>
+			</div>
+		</nav>
+		<h1 class="copper spaced_letters upper_content">NEWS</h1>
+		<div class="menu_container blog">
+			<!-- Put entries here -->
+			<!--div class="blog_entry">
+				<span class="created_date"></span>
+				<h3 class="title copper"></h3>
+				<p class="text">
+				</p>
+			</div>
+			<div class="blog_entry image">
+				<span class="created_date"></span>
+				<h3 class="title copper"></h3>
+				<img src="" alt="image 1">
+				<p class="text">
+				</p>
+			</div>
+			<div class="blog_entry">
+				<span class="created_date"></span>
+				<h3 class="title copper"></h3>
+				<p class="text"> 
+				</p>
+			</div>
+			<div class="blog_entry">
+				<span class="created_date"></span>
+				<h3 class="title copper"></h3>
+				<p class="text">
+				</p>
+			</div>
+			<div class="blog_entry last">
+				<span class="created_date"></span>
+				<h3 class="title copper"></h3>
+				<p class="text">
+				</p>
+			</div-->
+		</div>
+
+		<footer>
+			<div class="left_footer">
+				<span class="headline copper less_spaced_letters">JABE</span>
+					<span class="input copper small">Alte Sch&oumlnhauser Str. 7-8, 10119 Berlin</span>
+				<span class="input copper small">Tel: 03028609214</span>
+				<span class="input copper small">E-mail: info@jaberestaurant.de</span>
+			</div>
+			<div class="right_footer">
+				<span class="headline copper less_spaced_letters">OPENING HOURS</span>
+					<span class="input copper small">
+					LUNCH / 12:00-15:00 (l.o)<br>
+					DINNER / 17:30-22:00 (l.o)<br>
+				</span>
+			</div>
+		</footer>
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menu').click(function(){
+				$(this).toggleClass('change');
+				$('.menu_toggle.next_row').toggleClass('unvisible');
+				if($(this).hasClass('change')){
+					$(this).children('span').html('CLOSE');
+				}
+				else{
+					$(this).children('span').html('MENU');
+				}
+			})
+		});
+	</script>
+</html>

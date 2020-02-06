@@ -1,179 +1,277 @@
 ﻿<!DOCTYPE html>
 <html lang="GE" style="height: initial !important;">
-	<head>
-		<meta charset="uft-8">
-		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		 <meta name="author" content="Priska Kohnen">
-		 <meta name="date" content="2019-08-17T11:32:37+02:00">
-		 <meta name="description" content="Dine and Bar with Japanese essence. Our mission is to deliver the amazingly rich heritage to diners and drinkers in the heat of Mittte on a level not yet experienced in Berlin. This is why the name JABE was created after Japan and Berlin.">
-		<title>JABE</title>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-		<link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Priska Kohnen">
+    <meta name="date" content="2019-08-17T11:32:37+02:00">
+    <meta name="description"
+          content="Dine and Bar with Japanese essence. Our mission is to deliver the amazingly rich heritage to diners and drinkers in the heat of Mittte on a level not yet experienced in Berlin. This is why the name JABE was created after Japan and Berlin.">
+    <title>JABE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2296008633855279');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=2296008633855279&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body style="min-height: 2300px !important;">
+<header class="copper less_spaced_letters">
+    <div class="quandoo-widget-builder"
+         data-config='{"format":"text-button","bgcolor":"#040000","txcolor":"#c7b39e","merchant":53412,"txt":"RESERVATION"}'></div>
+</header>
+<a href="./index.html" class="logo_container">
+    <div class="logo">
+        <img src="jabe-logo.png" alt="JABE-Logo"/>
+    </div>
+</a>
+<nav class="nav_menu_container copper">
+    <div class="menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <span class="less_spaced_letters">MENU</span>
+    </div>
+    <div class="menu_toggle">
+        <!--a href="./news.html" class="link copper">NEWS</a>
+        <a href="./special_deals.html" class="link copper special">SPECIAL DEALS</a>
+        <a href="./events.html" class="link copper">EVENTS</a-->
+    </div>
+    <div class="menu_toggle next_row unvisible">
+        <a href="#gallery" class="link copper">GALLERY</a>
+        <a href="#access" class="link copper">ACCESS</a>
+        <a href="#concept" class="link copper">CONCEPT</a>
+        <a href="#menu" class="link copper">MENU</a>
+        <a href="./impressum.html" class="link copper">IMPRESSUM</a>
+        <a href="./datenschutz.html" class="link copper">DATENSCHUTZ</a>
+    </div>
+</nav>
+<h1 id="gallery" class="copper spaced_letters">GALLERY</h1>
+<div class="video_container">
+    <video controls autoplay muted>
+        <source src="./images/jabe_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div class="gallery_popup effect_content">
+    <div class="previous"><span><</span></div>
+    <img src="" id="img-replace" alt="">
+    <div class="next"><span>></span></div>
+</div>
+<div class="grey_overlay hidden"></div>
+<div class="menu_container gallery">
+    <img id="img-1" src="./images/1.jpg" alt="image 1">
+    <img id="img-2" src="./images/3.jpg" alt="image 2">
+    <img id="img-3" src="./images/2.jpg" alt="image 3">
+    <img id="img-4" src="./images/5.jpg" alt="image 4">
+    <img id="img-5" src="./images/4.jpg" alt="image 5">
+    <img id="img-6" src="./images/7.jpg" alt="image 6">
+    <img id="img-7" src="./images/6.jpg" alt="image 7">
+    <img id="img-8" src="./images/9.jpg" alt="image 8">
+    <img id="img-9" src="./images/8.jpg" alt="image 9">
+    <img id="img-10" src="./images/11.jpg" alt="image 10">
+    <img id="img-11" src="./images/10.jpg" alt="image 11">
+    <img id="img-12" src="./images/12.jpg" alt="image 12">
+</div>
+<h1 id="access" class="copper spaced_letters">ACCESS</h1>
+<div class="menu_container map">
+    <iframe id="ggl_map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.331364842951!2d13.405893515766278!3d52.527438579815666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e215fe9dd9%3A0x8ec888ccb10134c4!2sAlte%20Sch%C3%B6nhauser%20Str.%207-8%2C%2010119%20Berlin!5e0!3m2!1sen!2sde!4v1580927334807!5m2!1sen!2sde"
+            width="60%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div>
+		<span>
+			Monday 12:00–16:00, 17:30–22:00<br>
+			Tuesday 12:00–16:00, 17:30–22:00<br>
+			Wednesday 12:00–16:00, 17:30–22:00<br>
+			Thursday 12:00–16:00, 17:30–22:00<br>
+			Friday 12:00–16:00, 17:30–23:30<br>
+			Saturday 12:00–23:30<br>
+			Sunday 17:00–21:30<br>
+		</span>
+    </div>
+</div>
+<h1 id="concept" class="copper spaced_letters">CONCEPT</h1>
+<div class="menu_container concept">
+    <h2 class="copper center">"Dine and Bar with Japanese essence"</h2>
+    <p class="center">
+        In Japan, there is a culture of "Sharing". People share tapas and enjoy a conversation over drinks that
+        unites people on the table. JABE aims to establish and combine the flavors of traditional Japanese dine and
+        bar with the dynamic trends of Berlin's food culture where locals and international people from all over the
+        world can enjoy the moment.
+    </p>
+    <p class="center">
+        Our mission is to deliver the amazingly rich heritage to diners and drinkers in the heat of Mitte on a level
+        not yet experienced in Berlin. This is why the name JABE was created after Japan and Berlin.
+    </p>
+</div>
+<h1 id="menu" class="copper spaced_letters">MENU</h1>
+<h2 id="lunch_collapse" class="menu_seperator copper">Lunch <i class="fas fa-chevron-down"></i><i class="fas fa-chevron-up hidden"></i></h2>
+<div class="menu_container lunch">
+    <div class="menu_part">
+        <h2 class="copper spaced_letters">TIDBITS</h2><br>
+        <table>
+            <tr>
+                <td class="dish">Gyoza w/ Meat or Vegan</td><td class="price copper">4.5</td>
+            </tr>
+            <tr>
+                <td class="dish">Edamame <small>(vegan)</small></td><td class="price copper">3.9</td>
+            </tr>
+            <tr>
+                <td class="dish">Japanese Straw Fries <small>(vegan)</small></td><td class="price copper">4.5</td>
+            </tr>
+            <tr>
+                <td class="dish">Karaage</td><td class="price copper">4.5</td>
+              </tr>
+            <tr>
+                <td class="dish">Truffle Salad <small>(vegan)</small></td><td class="price copper">5.5</td>
+            </tr>
+            <tr>
+                <td class="dish">Jagaimo Salad</td><td class="price copper">3.9</td>
+            </tr>
+        </table>
 
-		<!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window,document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
-		 fbq('init', '2296008633855279'); 
-		fbq('track', 'PageView');
-		</script>
-		<noscript>
-		 <img height="1" width="1" 
-		src="https://www.facebook.com/tr?id=2296008633855279&ev=PageView
-		&noscript=1"/>
-		</noscript>
-		<!-- End Facebook Pixel Code -->
-	</head>
-	<body style="min-height: 2300px !important;">
-		<header class="copper less_spaced_letters">
-			<div class="quandoo-widget-builder" data-config='{"format":"text-button","bgcolor":"#040000","txcolor":"#c7b39e","merchant":53412,"txt":"RESERVATION"}'></div>
-			<div>GE/ EN</div>
-		</header>
-		<a href="./index.html" class="logo_container">
-			<div class="logo">
-				<img src="jabe-logo.png" alt="JABE-Logo"/>
-			</div>
-		</a>
-		<nav class="nav_menu_container copper">
-			<div class="menu">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-				<span class="less_spaced_letters">MENU</span>
-			</div>
-			<div class="menu_toggle">
-				<a href="./news.html" class="link copper">NEWS</a>
-				<a href="./special_deals.html" class="link copper special">SPECIAL DEALS</a>
-				<a href="./events.html" class="link copper">EVENTS</a>
-				<a href="./gallery.html" class="link copper">GALLERY</a>
-			</div>
-			<div class="menu_toggle next_row unvisible">
-				<a href="./impressum.html" class="link copper">IMPRESSUM</a>
-				<a href="./datenschutz.html" class="link copper">DATENSCHUTZ</a>
-			</div>
-		</nav>
-		<div class="upper_content center">
-			<h2 class="copper center">"Dine and Bar with Japanese essence"</h2>
-			<p class="center">
-				In Japan, there is a culture of "Sharing". People share tapas and enjoy a conversation over drinks that unites people on the table. JABE aims to establish and combine the flavors of traditional Japanese dine and bar with the dynamic trends of Berlin's food culture where locals and international people from all over the world can enjoy the moment.
-			</p>
-			<p class="center">
-				Our mission is to deliver the amazingly rich heritage to diners and drinkers in the heat of Mitte on a level not yet experienced in Berlin. This is why the name JABE was created after Japan and Berlin.
-			</p>
-		</div>
-		
-		<h1 class="copper spaced_letters _menu_toggle">MENU</h1>
-		<div class="menu_container _menu_toggle">
-			<div class="menu_part">
-				<h2 class="copper spaced_letters">TITBITS</h2><br>
-				<span class="dish">Gyoza Vegan <small>lunch only</small><span class="price copper">4,5</span></span>
-				<span class="dish">Gyoza Meat <small>lunch only</small><span class="price copper">4,5</span></span>
-				<span class="dish">Edamame<span class="price copper">3,9</span></span>
-				<span class="dish">Ingen Goma-ae<span class="price copper">4,5</span></span>
-				<span class="dish">Jagaimo Salad<span class="price copper">4,3</span></span>
-				<span class="dish">Tsukemono<span class="price copper">4,3</span></span>
-				<span class="dish">Karaage<span class="price copper">6,3</span></span>
-				<span class="dish">Tebasaki<span class="price copper">6,1</span></span>
-				<span class="dish">Tomorokoshi<span class="price copper">4,7</span></span>
-				<span class="dish">Takoyaki<span class="price copper">6,9</span></span>
-				<span class="dish">Grilled Tako<span class="price copper">18,5</span></span>
-				<span class="dish">Kinu Tofu<span class="price copper">10,5</span></span>
-				<span class="dish">Straw Fries <small>lunch only</small><span class="price copper">4,5</span></span>
-				<span class="dish">Potato Salad <small>lunch only</small><span class="price copper">3,9</span></span>
-				<span class="dish">Spinach Truffle Salad <small>lunch only</small><span class="price copper">6,9</span></span>
-				<span class="dish">Ome Rice<span class="price copper">13,7</span></span>
-				<span class="dish">Roast Beef Salad<span class="price copper">8,5</span></span>
-				<span class="dish">Truffle Salad<span class="price copper">10</span></span>
-				<br>
-				<span class="dish"><b>KUSHI YAKI TITBITS</b></span>
-				<span class="dish">Gyu Kushi<span class="price copper">6,9</span></span>
-				<span class="dish">Sake Kushi<span class="price copper">6,2</span></span>
-				<span class="dish">Torimomo Kushi<span class="price copper">5,9</span></span>
-				<span class="dish">Shiitake Kushi<span class="price copper">3,9</span></span>
-				<span class="dish">Uzura Tamago Kushi<span class="price copper">4,3</span></span>
-				<span class="dish">Kisetsu Yasai Kushi<span class="price copper">3,9</span></span>
-			</div>
-			<div class="menu_part">
-				<h2 class="copper spaced_letters">MAIN</h2><br>
-				<span class="dish"><b>UDON</b></span>
-				<span class="dish">Kitsune Udon<span class="price copper">8,6</span></span>
-				<span class="dish">Sesam Udon<span class="price copper">8,2</span></span>
-				<br>
-				<span class="dish"><b>BOWLS</b></span>
-				<span class="dish">Gyu Don Bowl<span class="price copper">8,9</span></span>
-				<span class="dish">Teriyaki Don Bowl <span class="price copper">8,5</span></span>
-				<span class="dish">Okinawa Sea Food Bowl <span class="price copper">10,9</span></span>
-				<span class="dish">Salmon Truffle Bowl<span class="price copper">12,9</span></span>
-				<span class="dish">Taco Rice Bowl<span class="price copper">8,9</span></span>
-				<span class="dish">Avocado Kimuchi Bowl<span class="price copper">8,6</span></span>
-				<br>
-				<span class="dish"><b>SASHIMI</b><span class="price copper"><small>5pcs / 9pcs</small></span></span>
-				<span class="dish">Salmon Sashimi<span class="price copper">8,9 / 12,5</span></span>
-				<span class="dish">Salmon Ponzu Sashimi<span class="price copper">9,5 / 12,9</span></span>
-				<span class="dish">Flamed Salmon Sashimi <span class="price copper">9,5 / 12,9</span></span>
-				<span class="dish">Mixed Salmon Sashimi<span class="price copper">9,9 / 15,9</span></span>
-			</div>
-			<div class="menu_part">
-				<h2 class="copper spaced_letters">DRINKS</h2><br>
-				<span class="dish"><b>JABE COCKTAILS</b></span>
-				<span class="dish">Japanese Whisky Sour<span class="price copper">10,5</span></span>
-				<span class="dish">White Shiro<span class="price copper">9,5</span></span>
-				<br>
-				<span class="dish"><b>JABE HIGH BALLS</b></span>
-				<span class="dish">Yuzu Gin & Tonic<span class="price copper">8,5</span></span>
-				<span class="dish">Umeshu High<span class="price copper">8,0</span></span>
-				<span class="dish">Chu High<span class="price copper">8,0</span></span>
-				<span class="dish">Whiskey Soda<span class="price copper">9,0</span></span>
-				<span class="dish">Kyoto Mule<span class="price copper">8,5</span></span>
-				<br>
-				<span class="dish"><b>BEER</b></span>
-				<span class="dish">Kirin <small>from Tap</small><span class="price copper">2,9</span></span>
-				<span class="dish">Bayreuther Hell<span class="price copper">3,5</span></span>
-				<span class="dish">BRLO German Pale Ale<span class="price copper">3,9</span></span>
-				<span class="dish">Krombacher 0,0%<span class="price copper">3,2</span></span>
-				<br>
-				<span class="dish"><b>WHITE / RED WINE</b><span class="price copper"><small>0,2l / 0,75l</small></span></span>
-				<span class="dish">Grauburgunder<span class="price copper">5,5 / 19,5</span></span>
-				<span class="dish">Ruppertsberger Riesling<span class="price copper">5,9 / 21,5</span></span>
-				<span class="dish">Spätburgunder<span class="price copper">5,5 / 19,5</span></span>
-				<span class="dish">Meriot Marquis Bernard<span class="price copper">5,9 / 21,5</span></span>
-				<br>
-				<span class="dish"><b>SOFTDRINKS</b><span class="price copper"><small>0,2l</small></span></span>
-				<span class="dish">Coca Cola<span class="price copper">2,8</span></span>
-				<span class="dish">Coca Cola Zero<span class="price copper">2,8</span></span>
-				<span class="dish">Apfelschorle<span class="price copper"><small>0,3l</small> 3,9</span></span>
-				<span class="dish">Tonic Fever Tonic <span class="price copper">3,2</span></span>
-				<span class="dish">Ginger Beer Fever Tonic<span class="price copper">3,2</span></span>
-				<span class="dish">Calpico Soda<span class="price copper">3,2</span></span>
-				<br>
-				<span class="dish"><b>WATER / TEA</b></span>
-				<span class="dish">Reussen Quell <small>(sparkling / still)</small><span class="price copper">2,8</span></span>
-				<span class="dish">Green Tea <small>(hot / cold)</small><span class="price copper">2,5</span></span>
-				</div>
-			</div>
-			<div class="upper_content center no_bottom_margin">
-				<video controls autoplay muted>
-				 	<source src="./images/jabe_video.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video> 
-			</div>
-		<footer>
-			<div class="left_footer">
-				<!--span class="headline copper less_spaced_letters">JABE</span-->
-				<span class="input copper small">Jabe Dine&Bar UG (haftungsbeschr&auml;nkt)</span>
-				<span class="input copper small">Alte Sch&ouml;nhauser Str. 7-8, 10119 Berlin</span>
-				<span class="input copper small">Tel: 03028609214</span>
-				<span class="input copper small">E-mail: <a href="mailto:info@jaberestaurant.de">info@jaberestaurant.de</a></span>
-			</div>
-			<div class="right_footer">
-				<span class="headline copper less_spaced_letters">OPENING HOURS</span>
-				<span class="input copper small">
+    </div>
+    <div class="menu_part">
+        <h2 class="copper spaced_letters">MAIN</h2><br>
+        <table>
+            <tr><td><b>UDON NOODLES</b></td></tr>
+            <tr>
+                <td class="dish">Kitsune Udon Soup <small>(vegan)</small></td><td class="price copper">8.5</td>
+            </tr>
+            <tr>
+                <td class="dish">Sesam Udon <small>(cold)</small></td><td class="price copper">8.3</td>
+            </tr>
+        </table>
+        <table>
+            <tr><td><b>BOWLS</b></td></tr>
+            <tr>
+                <td class="dish">Yakiniku Bowl</td><td class="price copper">8.9</td>
+            </tr>
+            <tr>
+                <td class="dish">Teriyaki Don Bowl</td><td class="price copper">8.5</td>
+            </tr>
+            <tr>
+                <td class="dish">Takahiro Sea Food Bowl</td><td class="price copper">10.9</td>
+            </tr>
+            <tr>
+                <td class="dish">Flamed Salmon Truffle Bowl</td><td class="price copper">12.9</td>
+            </tr>
+            <tr>
+                <td class="dish">Okinawa Sea Food Bowl</td><td class="price copper">8.9</td>
+            </tr>
+            <tr>
+                <td class="dish">Avocado Kimchi Bowl</td><td class="price copper">8.5</td>
+            </tr>
+            <tr>
+                <td class="dish">Karaage Curry Bowl</td><td class="price copper">8.9</td>
+            </tr>
+        </table>
+        <span class="dish"><b>JABE SPECIAL ROLLS</b><span class="price copper"><small>8 pcs</small></span></span>
+        <span class="dish">Veggie Crispy Roll<span class="price copper">7.5</span></span>
+        <span class="dish">Vegan Hokkaido Roll<span class="price copper">7.5</span></span>
+        <span class="dish">Spicy Tuna Roll<span class="price copper">8.9</span></span>
+        <span class="dish">JABE Salmon Tatar Roll<span class="price copper">8.5</span></span>
+        <span class="dish">Tokio Roll<span class="price copper">8.9</span></span>
+        <span class="dish">Kyoto Rol l<span class="price copper">8.9</span></span>
+        <br>
+        <span class="dish"><b>NIGIRI</b><span class="price copper"><small>2 pcs</small></span></span>
+        <span class="dish">Sake<span class="price copper">3</span></span>
+        <span class="dish">Maguro<span class="price copper">4</span></span>
+        <span class="dish">Hamachi<span class="price copper">3.5</span></span>
+        <span class="dish">Ebi<span class="price copper">3</span></span>
+        <span class="dish">Tamago<span class="price copper">3</span></span>
+        <br>
+        <span class="dish"><b>MAKI</b><span class="price copper"><small>6 pcs</small></span></span>
+        <span class="dish">Kappa<span class="price copper">3.4</span></span>
+        <span class="dish">Avocado<span class="price copper">4</span></span>
+        <span class="dish">Shinko<span class="price copper">4</span></span>
+        <span class="dish">Campio<span class="price copper">4</span></span>
+        <span class="dish">Tekka<span class="price copper">4.5</span></span>
+        <span class="dish">Sake<span class="price copper">4</span></span>
+        <span class="dish">Hamachi<span class="price copper">4</span></span>
+        <span class="dish">Ebi<span class="price copper">4</span></span>
+        <br>
+        <span class="dish"><b>SUSHI SET</b></span>
+        <span class="dish">Sushi Set Nigiri<span class="price copper">10.9</span></span>
+        <span class="dish">Sushi Set Maki<span class="price copper">8.5</span></span>
+        <span class="dish">Sushi Set Maki Veggie<span class="price copper">7.9</span></span>
+        <span class="dish">Sashimi Moriawase<span class="price copper">13</span></span>
+        <span class="dish">Sushi Set Mixed<span class="price copper">9.5</span></span>
+        <span class="dish">Sushi Set JABE Salmon<span class="price copper">9.5</span></span>
+    </div>
+    <div class="menu_part">
+        <h2 class="copper spaced_letters">DRINKS</h2><br>
+        <span class="dish"><b>JABE COCKTAILS</b></span>
+        <span class="dish">Japanese Whisky Sour<span class="price copper">10,5</span></span>
+        <span class="dish">White Shiro<span class="price copper">9,5</span></span>
+        <br>
+        <span class="dish"><b>JABE HIGH BALLS</b></span>
+        <span class="dish">Yuzu Gin & Tonic<span class="price copper">8,5</span></span>
+        <span class="dish">Umeshu High<span class="price copper">8,0</span></span>
+        <span class="dish">Chu High<span class="price copper">8,0</span></span>
+        <span class="dish">Whiskey Soda<span class="price copper">9,0</span></span>
+        <span class="dish">Kyoto Mule<span class="price copper">8,5</span></span>
+        <br>
+        <span class="dish"><b>BEER</b></span>
+        <span class="dish">Kirin <small>from Tap</small><span class="price copper">2,9</span></span>
+        <span class="dish">Bayreuther Hell<span class="price copper">3,5</span></span>
+        <span class="dish">BRLO German Pale Ale<span class="price copper">3,9</span></span>
+        <span class="dish">Krombacher 0,0%<span class="price copper">3,2</span></span>
+        <br>
+        <span class="dish"><b>WHITE / RED WINE</b><span class="price copper"><small>0,2l / 0,75l</small></span></span>
+        <span class="dish">Grauburgunder<span class="price copper">5,5 / 19,5</span></span>
+        <span class="dish">Ruppertsberger Riesling<span class="price copper">5,9 / 21,5</span></span>
+        <span class="dish">Spätburgunder<span class="price copper">5,5 / 19,5</span></span>
+        <span class="dish">Meriot Marquis Bernard<span class="price copper">5,9 / 21,5</span></span>
+        <br>
+        <span class="dish"><b>SOFTDRINKS</b><span class="price copper"><small>0,2l</small></span></span>
+        <span class="dish">Coca Cola<span class="price copper">2,8</span></span>
+        <span class="dish">Coca Cola Zero<span class="price copper">2,8</span></span>
+        <span class="dish">Apfelschorle<span class="price copper"><small>0,3l</small> 3,9</span></span>
+        <span class="dish">Tonic Fever Tonic <span class="price copper">3,2</span></span>
+        <span class="dish">Ginger Beer Fever Tonic<span class="price copper">3,2</span></span>
+        <span class="dish">Calpico Soda<span class="price copper">3,2</span></span>
+        <br>
+        <span class="dish"><b>WATER / TEA</b></span>
+        <span class="dish">Reussen Quell <small>(sparkling / still)</small><span class="price copper">2,8</span></span>
+        <span class="dish">Green Tea <small>(hot / cold)</small><span class="price copper">2,5</span></span>
+    </div>
+</div>
+<footer>
+    <div class="left_footer">
+        <!--span class="headline copper less_spaced_letters">JABE</span-->
+        <span class="input copper small">Jabe Dine&Bar UG (haftungsbeschr&auml;nkt)</span>
+        <span class="input copper small">Alte Sch&ouml;nhauser Str. 7-8, 10119 Berlin</span>
+        <span class="input copper small">Tel: 03028609214</span>
+        <span class="input copper small">E-mail: <a
+                href="mailto:info@jaberestaurant.de">info@jaberestaurant.de</a></span>
+    </div>
+    <div class="right_footer">
+        <span class="headline copper less_spaced_letters">OPENING HOURS</span>
+        <span class="input copper small">
 					Montag 12:00–16:00, 17:30–22:00<br>
 					Dienstag 12:00–16:00, 17:30–22:00<br>
 					Mittwoch 12:00–16:00, 17:30–22:00<br>
@@ -182,40 +280,140 @@
 					Samstag	12:00–23:30<br>
 					Sonntag	17:00–21:30<br>
 				</span>
-			</div>
-		</footer>
-	</body>
+    </div>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/5dc2449206.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#000"
+            },
+            "button": {
+                "background": "#c7b39e"
+            }
+        },
+        "content": {
+            "href": "www.jaberestaurant.de/datenschutz.html"
+        }
+    });
+</script>
+<script src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.menu').click(function () {
+            $(this).toggleClass('change');
+            $('.menu_toggle.next_row').toggleClass('unvisible');
+            if ($(this).hasClass('change')) {
+                $(this).children('span').html('CLOSE');
+            } else {
+                $(this).children('span').html('MENU');
+            }
+        });
+        $('#lunch_collapse').click(function () {
+            $('.menu_container.lunch').toggleClass('collapse');
+            $(this).find('.fa-chevron-down').toggleClass('hidden');
+            $(this).find('.fa-chevron-up').toggleClass('hidden');
+        });
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-	<script>
-		window.cookieconsent.initialise({
-			"palette": {
-				"popup": {
-					"background": "#000"
-				},
-				"button": {
-					"background": "#c7b39e"
-				}
-			},
-			"content": {
-				"href": "www.jaberestaurant.de/datenschutz.html"
-			}
-		});
-	</script>
-	<script src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.menu').click(function(){
-				$(this).toggleClass('change');
-				$('.menu_toggle.next_row').toggleClass('unvisible');
-				if($(this).hasClass('change')){
-					$(this).children('span').html('CLOSE');
-				}
-				else{
-					$(this).children('span').html('MENU');
-				}
-			})
-		});
-	</script>
+        function stopBodyScrolling(bool) {
+            if (bool === true) {
+                var scrollY = $(document).scrollTop();
+                $('body').attr('style', 'overflow-y:hidden !important; height: auto !important; position: fixed; top:-' + scrollY + 'px;');
+                $('html').attr('style', 'overflow-y:hidden !important;height: auto !important;');
+            } else {
+                var body = document.body;
+                var scrollY = body.style.top;
+                $('body').attr('style', 'overflow-y:scroll !important; min-height:2300px; height: auto !important; position: initial;');
+                $('html').attr('style', 'overflow-y:scroll !important; height: auto !important;');
+                body.style.top = '';
+                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            }
+        }
+
+        // only on click, closes the popup
+        $('.gallery_popup, .grey_overlay').click(function (e) {
+            $('.gallery_popup').toggleClass('shown');
+            $('.grey_overlay').toggleClass('hidden');
+            stopBodyScrolling(false);
+        });
+        //opens the popup
+        $('.menu_container.gallery img').click(function () {
+            var popup = $('.gallery_popup');
+            var replace_me = popup.find('img#img-replace');
+            replace_me.attr('src', $(this).attr('src'));
+            replace_me.attr('data-id', $(this).attr('id'));
+            popup.addClass('shown');
+            if ($('.gallery_popup').hasClass('shown')) {
+                stopBodyScrolling(true);
+            }
+            $('.grey_overlay').removeClass('hidden');
+        });
+        $('.previous, .next').click(function (e) {
+            e.stopPropagation();
+            $(this).addClass('clicked').delay(200).queue(function (next) {
+                $(this).removeClass('clicked');
+                next();
+            });
+            var replace_me = $('img#img-replace');
+            var curr_id = replace_me.attr('data-id');
+            if ($(this).hasClass('previous')) {
+                var prev = $('#' + curr_id).prev();
+                if (prev.length === 0) {
+                    prev = $('.menu_container.gallery img').last();
+                }
+                replace_me.attr('src', prev.attr('src'));
+                replace_me.attr('data-id', prev.attr('id'));
+            }
+            if ($(this).hasClass('next')) {
+                var next = $('#' + curr_id).next();
+                if (next.length === 0) {
+                    next = $('.menu_container.gallery img').first();
+                }
+                replace_me.attr('src', next.attr('src'));
+                replace_me.attr('data-id', next.attr('id'));
+            }
+        });
+        // now some touchevent handlers
+        $('.gallery_popup').on('touchstart', function (e) {
+
+            var swipe = e.originalEvent.touches,
+                start = swipe[0].pageX;
+            var replace_me = $('img#img-replace');
+            var curr_id = replace_me.attr('data-id');
+
+            $(this).on('touchmove', function (e) {
+
+                var contact = e.originalEvent.touches,
+                    end = contact[0].pageX,
+                    distance = end - start;
+
+                // left
+                if (distance < -30) {
+                    var next = $('#' + curr_id).next();
+                    if (next.length === 0) {
+                        next = $('.menu_container.gallery img').first();
+                    }
+                    replace_me.attr('src', next.attr('src'));
+                    replace_me.attr('data-id', next.attr('id'));
+
+                }
+                // right
+                if (distance > 30) {
+                    var prev = $('#' + curr_id).prev();
+                    if (prev.length === 0) {
+                        prev = $('.menu_container.gallery img').last();
+                    }
+                    replace_me.attr('src', prev.attr('src'));
+                    replace_me.attr('data-id', prev.attr('id'));
+                }
+            }).one('touchend', function () {
+                $(this).off('touchmove touchend');
+            });
+        });
+    });
+</script>
 </html>

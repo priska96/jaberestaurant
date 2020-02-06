@@ -101,7 +101,7 @@ nav.nav_menu_container {
 }
 .menu_toggle.next_row{
 	width: 100%;
-	max-height: 106px;
+	max-height: 316.8px;
 }
 
 a.link, span.link{
@@ -187,6 +187,9 @@ h1.upper_content{
 	max-width: 600px;
 	text-align: center;
 }
+#gallery, #access, #concept, #menu {
+	margin-top: 50px;
+}
 
 .menu_container {
 	width: 90%;
@@ -196,29 +199,49 @@ h1.upper_content{
 	justify-content: space-between;
 	flex: 1;
 }
+.menu_seperator{
+	width: 100%;
+	text-align: center;
+}
+.menu_container.lunch{
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease-in;
+}
+.menu_container.lunch.collapse{
+	max-height: 2500px;
+}
 
 .menu_part{
 	width: 30%;
 }
-
-span.dish{
-	display: block;
+.menu_part table{
+	width: 100%;
+}
+td.dish, td.price{
+	padding: 0;
+}
+td.dish{
+	width: 90%;
+}
+td.price{
+	text-align: right;
 }
 
-span.price{
-	float: right;
-}
-
-span.dish small, span.price small {
+td.dish small, td.price small {
 	font-size: 0.7em; 
 	color: #776c60;
 }
 
-span.dish b {
+td b {
 	color: #776c60;
 }
 
 /* GALLERY START */
+.video_container {
+	max-width: 1200px;
+	margin: 0 0 30px 0;
+}
 video {
   width: 100%;
   max-height: 100%;
@@ -299,8 +322,23 @@ video {
 	height: 3600px;
 	z-index: 1;
 }
-
 /* GALLERY PopUp END */
+
+/* ACCESS START*/
+#ggl_map {
+	max-width: 100%;
+}
+/* ACCESS END*/
+
+/* CONCEPT START*/
+.menu_container.concept{
+	max-width: 600px;
+	justify-content: center;
+}
+.menu_container.concept h2{
+	margin-top: 0;
+}
+/* CONCEPT END*/
 
 /* BLOG ENTRY START*/
 .blog_entry {

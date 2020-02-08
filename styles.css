@@ -346,7 +346,7 @@ video {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 3600px;
+	height: 100%;
 	z-index: 1;
 }
 /* GALLERY PopUp END */
@@ -354,6 +354,32 @@ video {
 /* ACCESS START*/
 #ggl_map {
 	max-width: 100%;
+	margin: 0 3px 0 0;
+}
+.opening_hours {
+	width: 35%;
+}
+.opening_hours table tr td{
+	vertical-align: top;
+	width: 70%;
+}
+.opening_hours table tbody tr td:nth-child(2){
+	width: 30%;
+}
+@media (max-width: 800px) {
+	#ggl_map {
+		width: 100%;
+	}
+	.opening_hours {
+		width: 50%;
+		margin: 5px auto;
+	}
+}
+@media (max-width: 500px) {
+	.opening_hours {
+		width: 100%;
+		margin: 5px auto;
+	}
 }
 /* ACCESS END*/
 
@@ -523,6 +549,13 @@ footer{
 	.menu_container.gallery img {
 		width: 49%;
 	}
+	#img-2, #img-9{
+		width: 100%;
+	}
+	 #img-1, #img-10{
+		 width: 60%;
+		 margin: 5px auto;
+	 }
 	#img-replace{
 		width: 65%;
 	}
@@ -562,8 +595,8 @@ footer{
 	.menu_container.gallery {
 		justify-content: center;
 	}
-	.menu_container.gallery img {
-		width: 80%;
+	.menu_container.gallery img, #img-2, #img-9, #img-1, #img-10 {
+		width: 100%;
 	}
 	#img-replace{
 		width: 80%;
